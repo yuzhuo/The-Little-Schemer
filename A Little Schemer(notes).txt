@@ -6,3 +6,6 @@
 6. The First Commandment(preliminary): Always ask null? as the first question in expressing any function.
 7. The Second Commandment: Use cons to build lists.
 8. The Third Commandment: When building a list, describe the first typical element, and then cons it onto the natural recursion.
+9. The Fourth Commandment(preliminary): Always change at least one argument while recurring. It must be changed to be closer to termination. The changing argument must be tested in the termination condition: when using cdr, test termination with null?.
+10. The First Commandment(first revision): When recurring on a list of atoms, lat, ask two questions about it: (null? lat) and else. When recurring on a number, n, ask two question about it: (zero? n) and else.
+11. The Fourth Commandment(first revision): Always change at least one argument while recurring. It must be changed to be closer to termination. The changing argument must be tested in the termination condition: when using cdr, test termination with null? and when using sub1, test termination with zero?.
